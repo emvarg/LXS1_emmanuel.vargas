@@ -9,8 +9,6 @@ eno1      Link encap:Ethernet  direcciónHW 50:65:f3:24:62:74
           Interrupción:20 Memoria:f7800000-f7820000 
 
 lo        Link encap:Bucle local  
-          Direc. inet:127.0.0.1  Másc:255.0.0.0
-          Dirección inet6: ::1/128 Alcance:Anfitrión
           ACTIVO BUCLE FUNCIONANDO  MTU:65536  Métrica:1
           Paquetes RX:2690 errores:0 perdidos:0 overruns:0 frame:0
           Paquetes TX:2690 errores:0 perdidos:0 overruns:0 carrier:0
