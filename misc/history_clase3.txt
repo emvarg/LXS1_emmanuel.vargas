@@ -1,0 +1,1707 @@
+    1  sudo su -
+    2  sync
+    3  exiyt
+    4  exit
+    5  esxec top
+    6  exec top
+    7  ls -l
+    8  top
+    9  top
+   10  sudo apt intall  terminator
+   11  sudo apt install  terminator
+   12  terminator
+   13  echo hola
+   14  echo $PATH
+   15  cd /dev/
+   16  pwd
+   17  ls -l
+   18  cd /cd 
+   19  cd
+   20  pwd
+   21  pwdlrwxrwxrwx  1 root root            15 mar 20 16:00 stderr -> /proc/self/fd/2
+   22  cat /dev/input/mouse0 
+   23  sudo cat /dev/input/mouse0 
+   24  sudo cat /dev/input/mouse0 > /home/academia/mouse.txt
+   25  cat /home/academia/mouse.txt
+   26  uname
+   27  unam e-a
+   28  uname -a
+   29  man uname
+   30  echo $VAR
+   31  echo $var2
+   32  exit
+   33  echo $var3
+   34  exit
+   35  VAR=1
+   36  echo $VAR
+   37  var2=2
+   38  echo $var2
+   39  kconsole
+   40  eho $var2
+   41  terminator 
+   42  export var3=123
+   43  echo $var3
+   44  teminator
+   45  terminator 
+   46  exit
+   47  pwd
+   48  ls -l
+   49  cd Descargas/
+   50  exit
+   51  cat /etc/passwd
+   52  vim /etc/passwd
+   53  exit
+   54  tail -f .bash
+   55  NDG Introduction to Linux I - Chapter 1: Using the Shell
+   56  1.15 Command Completion
+   57  A useful tool of the bash shell is the ability to automatically complete commands and their arguments. Like many command line shells, bash offers command line completion, where you type a few characters of a command (or its filename argument) and then press the Tab key. The bash shell will complete the command (or its filename argument) automatically for you. For example, if you type ech and press Tab, then the shell will automatically complete the command echo for you.
+   58  There will be times when you type a character or two and press the Tab key, only to discover that bash does not automatically complete the command. This will happen when you haven't typed enough characters to match only one command. However, pressing the Tab key a second time in this situation will display the possible completions (possible commands) available.
+   59  A good example of this would be if you typed ca and pressed Tab, then nothing would be displayed. If you pressed Tab a second time, then the possible ways to complete a command starting with ca would be shown:
+   60  sysadmin@localhost:~$ ca
+   61  cal                capsh              cat                cautious-launcher
+   62  calendar           captoinfo          catchsegv
+   63  caller             case               catman
+   64  sysadmin@localhost:~$ ca
+   65  Another possibility may occur when you have typed too little to match a single command name uniquely. If there are more possible matches to what you've typed than can easily be displayed, then the system will ask you if you want to display all possibilities.
+   66  For example, if you just type c and press the Tab key twice, the system may provide you with a prompt like:
+   67  Display all 102 possibilities? (y or n)
+   68  You should probably respond with n in a situation like this and then continue to type more characters to achieve a more refined match.
+   69  A common mistake when typing commands is to misspell the command. Not only will you type commands faster, but you will type more accurately if you use command completion. Using the Tab key to automatically complete the command helps to ensure that the command is typed correctly.
+   70  Note that completion also works for arguments to commands when the arguments are file or directory names.
+   71  sysadmin@localhost:~$ ls -l -a                                                  
+   72  total 64                                                                        
+   73  drwxr-xr-x 1 sysadmin sysadmin 4096 Mar 21 00:39 .                              
+   74  drwxr-xr-x 1 root     root     4096 Mar 14  2016 ..                             
+   75  -rw-r--r-- 1 sysadmin sysadmin  220 Apr  9  2014 .bash_logout                   
+   76  -rw-r--r-- 1 sysadmin sysadmin 3768 Mar 14  2016 .bashrc                        
+   77  drwx------ 2 sysadmin sysadmin 4096 Mar 21 00:39 .cache                         
+   78  -rw-r--r-- 1 sysadmin sysadmin  675 Apr  9  2014 .profile                       
+   79  -rw-r--r-- 1 sysadmin sysadmin   74 Mar 14  2016 .selected_editor               
+   80  drwxr-xr-x 2 sysadmin sysadmin 4096 Mar 14  2016 Desktop                        
+   81  drwxr-xr-x 2 sysadmin sysadmin 4096 Mar 14  2016 Documents                      
+   82  drwxr-xr-x 2 sysadmin sysadmin 4096 Mar 14  2016 Downloads                      
+   83  drwxr-xr-x 2 sysadmin sysadmin 4096 Mar 14  2016 Music                          
+   84  drwxr-xr-x 2 sysadmin sysadmin 4096 Mar 14  2016 Pictures                       
+   85  drwxr-xr-x 2 sysadmin sysadmin 4096 Mar 14  2016 Public                         
+   86  drwxr-xr-x 2 sysadmin sysadmin 4096 Mar 14  2016 Templates                      
+   87  drwxr-xr-x 2 sysadmin sysadmin 4096 Mar 14  2016 Videos                         
+   88  drwxr-xr-x 2 sysadmin sysadmin 4096 Mar 14  2016 test                           
+   89  sysadmin@localhost:~$ cd D                                                      
+   90  Desktop/   Documents/ Downloads/                                                
+   91  sysadmin@localhost:~$ cd D                                                      
+   92  Desktop/   Documents/ Downloads/                                                
+   93  sysadmin@localhost:~$                                                           
+   94  tail -f .bash_history 
+   95  exit
+   96  cat .bash_history 
+   97  cat .bash_profile 
+   98  cat .profile 
+   99  cat .bashrc 
+  100  ls --help
+  101  head --help 
+  102  man apropos 
+  103  apropos apropos 
+  104  exit
+  105  man ls
+  106  man grep
+  107  history > history.txt
+  108  less history.txt 
+  109  man grep 
+  110  man k passwd
+  111  man -k passwd
+  112  man -f passwd
+  113  whatis passwd
+  114  info ls
+  115  man ls
+  116  sync
+  117  vim alpha-text.txt 
+  118  sync
+  119  dmesg
+  120  touch text2.txt
+  121  locate text2.txt 
+  122  sudo updatedb 
+  123  locate text2.txt 
+  124  rm text2.txt 
+  125  locate text2.txt 
+  126  sudo updatedb 
+  127  locate 
+  128  locate text2.txt
+  129  man find
+  130  whereis cat
+  131  whereis -s cat
+  132  whereis -u -m cat
+  133  whereis  -m cat
+  134  echo $PATH
+  135  man rm
+  136  man touch
+  137  ls -l
+  138  stat alpha-text.txt 
+  139  touch alpha-text.txt 
+  140  stat alpha-text.txt 
+  141  touch miarchivo.txt
+  142  stat miarchivo.txt 
+  143  cat miarchivo.txt 
+  144  ls -l miarchivo.txt 
+  145  ln -s miarchivo.txt miotroarchivo.txt
+  146  ls -l
+  147  ls -li
+  148  rm miarchivo.txt 
+  149  ll
+  150  ls -l /etc/resolv.conf 
+  151  ls -l /run/resolvconf/resolv.conf 
+  152  ls -l /run/resolvconf/
+  153  ls -l /run/resolvconf
+  154  ls -l /run/resolvconf | grep resolv.conf
+  155  ls -l /run/resolvconf | grep resolv
+  156  ls -l /run/ | grep resolv
+  157  ls -l /run/resolvconf/resolv.conf 
+  158  ln miarchivo.txt miotroarchivo2
+  159  ls -l
+  160  ls -i
+  161  ls -li
+  162  vim miarchivo.txt 
+  163  rm miarchivo.txt 
+  164  vim miotroarchivo2 
+  165  exit
+  166  ls 
+  167  ls -l
+  168  ls -lh
+  169  ls -lR
+  170  ls -lh
+  171  ls -lhR
+  172  ls -lhai
+  173  ls -lai
+  174  ls -lahi
+  175  type cat
+  176  type -a cat
+  177  type -t cat
+  178  type -a cat
+  179  type -a echo
+  180  type echo
+  181  type -a echo
+  182  type -t echo
+  183  type -at echo
+  184  type -at cd
+  185  type -at ls
+  186  ll
+  187  type -a ll
+  188  type -a ls
+  189  ls
+  190  cd /bin/
+  191  ls
+  192  ls -l
+  193  cd 
+  194  cd /
+  195  cd /var/log/
+  196  ll
+  197  cd lightdm/
+  198  ll
+  199  type ll
+  200  man gunzip
+  201  touch file1
+  202  ll
+  203  ls -lh
+  204  gzip examples.desktop 
+  205  gunx
+  206  ls -lh .
+  207  gunzip -l examples.desktop.gz 
+  208  gunzip examples.desktop.gz 
+  209  ll
+  210  bzip2 -v examples.desktop 
+  211  man bzip2
+  212  ls ~
+  213  ls ~ > /tmp/home.txt
+  214  cat /tmp/home.txt 
+  215  date >> /tmp/home.txt
+  216  date
+  217  cal 
+  218  cal > /tmp/cal.txt
+  219  cat /tmp/cal.txt 
+  220  date >> /tmp/home.txt 
+  221  cat /tmp/home.txt 
+  222  find /etc/ -name passwd 2> /tmp/error.txt
+  223  find /etc/ -name passwd
+  224  find /etc/ -name passwd 2> /tmp/error.txt
+  225  cat /tmp/error.txt
+  226  xargs 
+  227  echo asdf 
+  228  xargs 
+  229  cat lista-de-archivos.txt
+  230  cat 
+  231  cat lista-de-archivos.txt 
+  232  cat lista-de-archivos.txt | xargs touch
+  233  ls -l
+  234  cat lista-de-archivos.txt | xargs rm
+  235  ls -l
+  236  cat lista-de-archivos.txt | xargs rmq
+  237  top
+  238  htop
+  239  sudo apt install htop
+  240  htop
+  241  apt show htop
+  242  apt-get search htop
+  243  apt-cache search htop
+  244  cat /etc/apt/sources.list
+  245  vim /etc/apt/sources.list
+  246  exit
+  247  ls -ld /tmp/
+  248  SUDO SU -
+  249  sudo su -
+  250  cd /tmp/
+  251  mkdir informes
+  252  cd informes/
+  253  touch prueba
+  254  ls -l
+  255  addgroup asistentes
+  256  sudo addgroup asistentes
+  257  cat /etc/group | grep asistentes
+  258  cd ..
+  259  chgrp asistentes informes/
+  260  sudo chgrp asistentes informes/
+  261  ls -ld informes/
+  262  sudo chmod g+s informes/
+  263  ls -ld informes/
+  264  touch informes/pruebas2
+  265  ls -l informes/*
+  266  chmod g-s informes/
+  267  touch informes/pruebas3
+  268  ls -l informes/*
+  269  ls -lh informes/*
+  270  last
+  271  who
+  272  top
+  273  exit
+  274  ps
+  275  sudo su -
+  276  ps
+  277  sudo su -
+  278  ps
+  279  ps -au
+  280  ps au
+  281  ps -au
+  282  ps au
+  283  ps
+  284  ps aux
+  285  ps -e
+  286  ps -f
+  287  ps -ef
+  288  sleep 1000
+  289  jobs
+  290  fg 1
+  291  jobs
+  292  sleep 1000 &
+  293  sleep 100& sleep 200 & sleep 300 &
+  294  jobs
+  295  man jobs
+  296  jobs -h
+  297  man jobs
+  298  sudo su -
+  299  jobs 
+  300  ps
+  301  jobs
+  302  kill -15 6422
+  303  jobs
+  304  sleep 200&
+  305  jobs
+  306  sleep 200&
+  307  jobs
+  308  fg 5
+  309  jobs
+  310  bg 5
+  311  jobs
+  312  kill -l
+  313  ps aux
+  314  top
+  315  ps aux | grep whatchdog
+  316  ps aux | grep rcu_bh
+  317  sudo top
+  318  sudo nice -n -20 cat /dev/null > /dev/null &
+  319  sudo nice -n -20 cat /dev/zero > /dev/null &
+  320  sudo nice -n -20 cat /dev/null > /dev/null &
+  321  sudo nice -n -20 cat /dev/zero > /dev/null 
+  322  sudo nice -n -20 cat /dev/null > /dev/null 
+  323  top
+  324  sudo top
+  325  gnome-system-monitor 
+  326  htop
+  327  find / \/bin\/
+  328  find / \/bin\/
+  329  sudo find / | grep \/bin\/
+  330  sudo find / | grep bin
+  331  sudo find / | grep /bin
+  332  sudo find / | grep /bin/
+  333  sudo find 
+  334  echo "D*"
+  335  echo D*
+  336  ls
+  337  ls -l D*
+  338  ls -lR D*
+  339  ls  D*
+  340  ls  D*n*
+  341  echo D*n*
+  342  ls
+  343  htop
+  344  top
+  345  ls
+  346  gnome-terminal
+  347  sudo su -
+  348  gnome-terminal
+  349  ls
+  350  ssh 10.124.18.218
+  351  mail
+  352  echo "Permiso de acceso a sudo" | mail -s "Solicitud de permiso" user1
+  353  echo "Por favor, revisar backup" | mail -s "Rev backup" user1
+  354  echo "Ocupo acceso a dev.tarro.io" | mail -s "Acceso a nuevo servidor" user1
+  355  echo "Otro mensaje" | mail -s "Servidor temp" user1
+  356  mail
+  357  apt-cache show mailutils
+  358  sudo apt-get update
+  359  sudo apt-get install mailutils
+  360  sudo apt-get install nmap
+  361  netstat  -latunp | grep 25
+  362  ip -4 addr 
+  363  nmap 10.124.18.220
+  364  netstat  -latup | grep smtp
+  365  cd /etc/postfix/
+  366  ls
+  367  tree
+  368  sudo apt-get install tree
+  369  tree
+  370  sudo vim main.cf 
+  371  sudo systemctl restart postfix.service
+  372  netstat  -latup | grep smtp
+  373  nmap 10.124.18.220
+  374  nmap localhost
+  375  sudo adduser user1
+  376  su - user1 
+  377  echo "Otro mensaje" | mail -s "Servidor temp 2" user1
+  378  ifconfig 
+  379  sudo ifdown en01
+  380  sudo ifdown eno1
+  381  ifconfig 
+  382  echo "Otro mensaje" | mail -s "Servidor temp 2" uk_32y@yahoo.com
+  383  mailq
+  384  echo "Otro mensaje" | mail -s "Servidor temp 3" uk3xd8@gmail.com
+  385  mailq
+  386  ifconfig 
+  387  mailq
+  388  less /var/log/mail.log 
+  389  sudo apt-get install cups
+  390  sudo su -
+  391  vim /etc/cups/cupsd.conf 
+  392  mail user1
+  393  mail
+  394  mail user1
+  395  echo "prueba de correo" | mail -s "hola mundo" uk_32y@yahoo.com
+  396  mail
+  397  mailq
+  398  echo "prueba de correo" | mail -s "hola mundo" pedropalotes@yahoo.com
+  399  mailq
+  400  sudo su -
+  401  man ping 
+  402  ip -4 addr
+  403  ls
+  404  ls
+  405  ls -l
+  406  ls
+  407  cd /tmp/
+  408  ls
+  409  touch alguien
+  410  ftp 10.124.18.218
+  411  ls
+  412  ls -l
+  413  rm miotroarchivo
+  414  rm miotroarchivo.txt 
+  415  ls
+  416  ip -4 addr 
+  417  ls
+  418  cd /tmp/
+  419  ls
+  420  dd if=/dev/zero of=data.out count=1M bs=10
+  421  ls -l
+  422  file data.out 
+  423  ls
+  424  cd 
+  425  ls
+  426  ls /tmp/
+  427  cd /tmp/
+  428  ls
+  429  ls ~
+  430  ls  ~
+  431  ftp 10.124.18.218
+  432  ls
+  433  rm data.out 
+  434  ls
+  435  rm history.txt 
+  436  ls
+  437  ftp 10.124.18.218
+  438  cd 
+  439  ls
+  440  ftp 10.124.18.218
+  441  ls
+  442  ftp 10.124.18.218
+  443  ip -4 addr 
+  444  ftp 10.124.18.220
+  445  ftp 127.0.0.1
+  446  ps aux | grep ftp
+  447  apt-cache search ftp
+  448  apt-cache search ftpd
+  449  sudo apt-get install ftpd
+  450  ip -4 add r
+  451  ip -4 adddr
+  452  ip -4 addr
+  453  nmap 10.124.18.220
+  454  nmap localhost
+  455  ftp 127.0.0.1
+  456  rm data.out 
+  457  touch emma
+  458  ls
+  459  ls /tmp/
+  460  ping youtube.com
+  461  route 
+  462  route -n
+  463  netstat -latunp
+  464  sudo apt-get install openssh-server
+  465  route -n
+  466  ssh uk@lolo.emate.ucr.ac.cr
+  467  cat /etc/services 
+  468  cat /etc/services  | less 
+  469  route
+  470  route -n
+  471  dmesg 
+  472  su - user1
+  473  sudo apt-get install telnetd
+  474  telnet 127.0.0.1
+  475  clear
+  476  exit
+  477  w
+  478  netstat -ltuan less
+  479  netstat -ltua | less 
+  480  netstat -ltua | grep telnet
+  481  netstat -ltua | less
+  482  exit 
+  483  exit
+  484  netstat -latun
+  485  netstat -latun | grep 226
+  486  exit
+  487  nmap academia
+  488  exit
+  489  ssh -p 1234 academia@10.124.18.220
+  490  ping lolo.emate.ucr.ac/.cr
+  491  ping lolo.emate.ucr.ac.cr
+  492  sudo su -
+  493  ssh uk@lolo.emate.ucr.ac.cr
+  494  cat /etc/network/interfaces
+  495  cat /etc/resolv.conf 
+  496  ssh uk@lolo.emate.ucr.ac.cr
+  497  dig +trace yahoo.com
+  498  dig trace yahoo.com
+  499  ssh uk@lolo.emate.ucr.ac.cr
+  500  dig +trace lolo.emate.ucr.ac.cr
+  501  sudo apt-get purge ftpd
+  502  sudo apt-get install telnetd
+  503  nmap academia
+  504  nmap 10.124.18.220
+  505  telnet 10.124.18.220
+  506  nmap 10.124.18.220
+  507  telnet 10.124.18.220 22
+  508  telnet 10.124.18.220 20
+  509  sudo vim /etc/ssh/sshd_config 
+  510  sudo systemctl restart sshd.service 
+  511  nmap 10.124.18.220
+  512  telnet 10.124.18.220 1234
+  513  dig +trace yahoo.com
+  514  dig lolo.emate.ucr.ac.cr
+  515  dig yahoo.com
+  516  ifconfig 
+  517  cat /etc/resolv.conf 
+  518  nmap 10.124.18.1
+  519  sudo vim /etc/resolv.conf 
+  520  vim /etc/nsswitch.conf 
+  521  ifconfig 
+  522  ifconfig  -a 
+  523  ls
+  524  history > history.txt 
+  525  sudo apt-get install cowsay
+  526  cowsay HOOLA
+  527  cowsay HOOLA MUNDO
+  528  vim .bashrc 
+  529  man fdisk 
+  530  echo hola
+  531  touch /tmp/test1
+  532  dmesg | head > /tmp/test1
+  533  cat /tmp/test1
+  534  hexdump -C  /tmp/test1
+  535  pwd
+  536  ls /
+  537  sudo su -
+  538  cal
+  539  cal 2017
+  540  alias my_year="cal 2017"
+  541  my_year 
+  542  history 
+  543  dpkg --get-selections 
+  544  dpkg --get-selections | grep linux
+  545  which ls
+  546  ls /home
+  547  which grep
+  548  which nmap
+  549  ls -l
+  550  ls
+  551  ls -l
+  552  ls -lh
+  553  ls -l
+  554  ls -hl
+  555  #ls -l `which ls`
+  556  ls -l `which ls`
+  557  ls `which ls`
+  558  ls /bin/ls
+  559  ls /bin
+  560  ls /bin/ls
+  561  ls /bin/ls -l
+  562  ls -l /bin
+  563  history 
+  564  dpkg --get-selections | grep linux
+  565  history | grep nmap
+  566  last
+  567  w
+  568  ls
+  569  pwd
+  570  ls
+  571  ls /home/academia/
+  572  cd ..
+  573  pwd
+  574  ls
+  575  cd academia/
+  576  pwd
+  577  ls
+  578  cd Documentos/
+  579  ls
+  580  cd ..
+  581  cd /etc/apt/sources.list.d/
+  582  cd
+  583  man ls
+  584  ls
+  585  ls -w 10
+  586  ls -T 10
+  587  uname 
+  588  uname -a
+  589  uname -n
+  590  hostname
+  591  uname -n -o
+  592  pwd
+  593  ls
+  594  ls mouse.txt 
+  595  gnome-terminal
+  596  pstree
+  597  htop 
+  598  htop
+  599  bash
+  600  sudo apt-get update
+  601  htop
+  602  screen
+  603  screen -list 
+  604  exit 
+  605  htop
+  606  ls
+  607  watch dmesg 
+  608  screen -list 
+  609  screen -r
+  610  VAR1=caso
+  611  echo lkjhsdfgdf
+  612  echo $VAR1
+  613  VAR1=otro
+  614  echo $VAR1
+  615  echo Este es $VAR1 caso
+  616  echo 'Este es $VAR1 caso'
+  617  ssh uk@lolo.emate.ucr.ac.cr
+  618  ip -4 addr 
+  619  nmap 10.124.18.144
+  620  nmap 10.124.18.231
+  621  nmap 10.124.18.78
+  622  nmap 10.124.18.80
+  623  nmap 10.124.18.90
+  624  nmap 10.124.18.45
+  625  nmap 10.124.18.75
+  626  nmap 10.124.18.126
+  627  nmap 10.124.18.37
+  628  nmap 10.124.18.138
+  629  nmap 10.124.18.42
+  630  nmap 10.124.18.177
+  631  history 
+  632  ip -4 addr 
+  633  nmap 10.124.18.221
+  634  sudo apt-get install openssh-server
+  635  sudo systemctl start ssh
+  636  nmap 10.124.18.221
+  637  vim /etc/ssh/sshd_config 
+  638  sudo vim /etc/ssh/sshd_config 
+  639  sudo systemctl restart ssh
+  640  nmap 10.124.18.221
+  641  sudo apt-get install screen
+  642  ip -4 addr 
+  643  ssh academia@10.124.18.221
+  644  echo $VAR1
+  645  exit 
+  646  echo $VAR1
+  647  otro_VAR=casa
+  648  exit 
+  649  which nmap
+  650  mkdir $HOME/prueba1
+  651  ls $HOME
+  652  pwd
+  653  cd /etc/apt
+  654  echo $HOME
+  655  mkdir $HOME/prueba1/prueba2
+  656  ls $HOME/prueba1
+  657  tree $HOME/prueba1
+  658  cd 
+  659  echo $VAR1
+  660  VAR1=5
+  661  VAR2=otro
+  662  mi_var=caso
+  663  echo $VAR1 esta es una salida $VAR2 en el $mi_var
+  664  bash
+  665  export VAR1
+  666  bash
+  667  echo $otro_VAR
+  668  seryt
+  669  set
+  670  set | less
+  671  env | less 
+  672  history 
+  673  env var
+  674  env | grep var
+  675  env | grep VAR
+  676  set | grep VAR
+  677  set | grep -i VAR
+  678  env
+  679  env | less
+  680  ls
+  681  which ls
+  682  /bin/ls
+  683  /bin/ls --color=auto
+  684  ls
+  685  cd /etc/apt/sources.list.d/
+  686  prog1 
+  687  ls *.txt
+  688  VAR1=`ls *.txt`
+  689  echo $VAR1
+  690  VAR1=$(ls *.txt)
+  691  echo $VAR1
+  692  PROJECT=$(pwd)
+  693  echo $PROJECT 
+  694  ls
+  695  nano prog1.sh
+  696  mv prog1.sh /tmp/
+  697  cd /tmp
+  698  ls
+  699  chmod 750 prog1.sh 
+  700  ls
+  701  ls -l
+  702  ./prog1.sh 
+  703  ls
+  704  nano prog1.sh 
+  705  history 
+  706  mv prog1.sh programa_identificador.sh
+  707  ls -l
+  708  ./programa_identificador.sh 
+  709  echo $PATH
+  710  cd 
+  711  ls
+  712  mkdir bin
+  713  ls
+  714  cp /tmp/programa_identificador.sh bin/
+  715  ls bin/
+  716  programa_identificador.sh 
+  717  ls
+  718  mv bin/programa_identificador.sh bin/prog1
+  719  ls bin/
+  720  echo $PATH
+  721  PATH=/opt/bin:$PATH
+  722  echo $PATH
+  723  mkdir /opt/bin
+  724  uptime 
+  725  ls
+  726  ls -l
+  727  ls
+  728  ls -a
+  729  vim .bashrc 
+  730  nano .bashrc 
+  731  cowsay  hola admin!
+  732  vim .bashrc 
+  733  echo $proyecto
+  734  echo $proyectos
+  735  bash
+  736  echo $proyectos
+  737  ssh academia@10.124.18.221
+  738  nano .bashrc 
+  739  echo $proyecto
+  740  echo $proyectos
+  741  source .bashrc 
+  742  echo $proyectos
+  743  nano .bashrc 
+  744  source .bashrc 
+  745  vim .bashrc
+  746  cat .bashrc 
+  747  vim .bash_history 
+  748  ls
+  749  cd /var/log/
+  750  ls
+  751  cat auth.log
+  752  cat auth.log | grep ssh
+  753  ls
+  754  cat auth.log auth.log.1 
+  755  cat auth.log auth.log.1 | grep sshd
+  756  cat auth.log auth.log.1 | grep sshd > /tmp/sshd.log.auth
+  757  less /tmp/sshd.log.auth
+  758  cd 
+  759  less /tmp/sshd.log.auth
+  760  cat /tmp/sshd.log.auth
+  761  cat /tmp/sshd.log.auth | less
+  762  cat /tmp/sshd.log.auth
+  763  echo hola > /tmp/sshd.log.auth
+  764  cat /tmp/sshd.log.auth
+  765  echo hola otra vez >> /tmp/sshd.log.auth
+  766  cat /tmp/sshd.log.auth
+  767  dmesg | tail >> /tmp/sshd.log.auth
+  768  cat /tmp/sshd.log.auth
+  769  dmesg 
+  770  cd /tmp/
+  771  ls
+  772  mv sshd.log.auth archivo
+  773  ls
+  774  file archivo 
+  775  cd 
+  776  cd Dw
+  777  cd Downloads/
+  778  ls
+  779  ls -l
+  780  file 02.zip 
+  781  file unetbootin-linux64-638.bin 
+  782  file Cap12.pdf 
+  783  hexdump -C Cap12.pdf | less 
+  784  cd /tmp/
+  785  ls
+  786  dd if=/dev/zero of=/tmp/data.out bs=1 count=12
+  787  ls -l
+  788  split -b 2 data.out 
+  789  ls -l
+  790  cat xa* > data2.out
+  791  ls -l
+  792  split -n 4 data.out salidas.
+  793  ls -l
+  794  history 
+  795  ls
+  796  cat archivo 
+  797  cat archivo | nl
+  798  sudo service lightdm restart
+  799  man split
+  800  cd /tmp/
+  801  ls
+  802  dmesg > kernel.out
+  803  split kernel.out resultados -l 100
+  804  ls -l
+  805  ls
+  806  wc resultadosaa 
+  807  split kernel.out resultados -l 1000
+  808  wc resultadosaa 
+  809  rm resultadosa*
+  810  split kernel.out resultados -l 1000
+  811  ls
+  812  dmesg 
+  813  dmesg | less
+  814  dmesg | head
+  815  dmesg | head -n 3
+  816  dmesg > /tmp/dmesg.log
+  817  less /tmp/dmesg.log
+  818  head /tmp/dmesg.log
+  819  head -n 3 /tmp/dmesg.log
+  820  dmesg | head -n 3
+  821  history 
+  822  dmesg | head -n 3
+  823  dmesg | head -n 3 | nl
+  824  head -n 3 /tmp/dmesg.log
+  825  dmesg | wc
+  826  cat /tmp/dmesg.log | head -n 3 | nl
+  827  cat  /tmp/dmesg.log |nl | head -n 3 
+  828  head -3  /tmp/dmesg.log | nl
+  829  tail -3  /tmp/dmesg.log 
+  830  tail -3  /tmp/dmesg.log  | nl
+  831  tail -n +20  /tmp/dmesg.log  | nl
+  832  head -30  /tmp/dmesg.log | 
+  833  head -30  /tmp/dmesg.log 
+  834  head -30  /tmp/dmesg.log | tail -n +20
+  835  head -30  /tmp/dmesg.log |nl |  tail -n +20
+  836  head -30  /tmp/dmesg.log |nl |  tail
+  837  htop
+  838  less /etc/passwd
+  839  less /etc/shadow
+  840  sudo less /etc/shadow
+  841  cat /etc/passwd
+  842  cut -d":" -f1,4 /etc/passwd
+  843  tail /etc/passwd
+  844  cut -d'#$_' -f4,1 /etc/passwd
+  845  cp .bash_history Documentos/history-clase1.txt
+  846  history 
+  847  ls
+  848  cd
+  849  cd /etc/
+  850  history 
+  851  vim .bashrc 
+  852  bash
+  853  w
+  854  netstat -latun
+  855  ssh estudiantes@10.124.18.177
+  856  apt-cache search vim
+  857  apropos make links
+  858  id
+  859  sudo fdisk -l
+  860  fdisk -l
+  861  id
+  862  sudo su -
+  863  ssh estudiante@10.124.18.177
+  864  ssh estudiantes@10.124.18.177
+  865  dmesg | less
+  866  cat /var/log/syslog | less
+  867  less /var/log/syslog
+  868  man cd
+  869  man ls
+  870  man  ln
+  871  su - academia
+  872  ls ..
+  873  sudo passwd user1
+  874  su - user1
+  875  exir
+  876  exit
+  877  man fdisk 
+  878  ls /etc/passwd
+  879  passwd 
+  880  man passwd
+  881  ls /sbin/
+  882  ls /usr/bin/
+  883  history 
+  884  visudo 
+  885  sudo visudo 
+  886  info ls
+  887  head --help
+  888  man head
+  889  info head
+  890  bash
+  891  id
+  892  sudo su -
+  893  man fdisk 
+  894  sudo fdisk -s
+  895  sudo fdisk -s -l
+  896  man fdisk 
+  897  vim /etc/passwd
+  898  date
+  899  sudo su -
+  900  cd /tmp
+  901  ls
+  902  mkdir test
+  903  cd test/
+  904  ls
+  905  mkdir folder{1,2}
+  906  ls
+  907  mkdir folder1/proyecto/acueducto
+  908  mkdir -p folder1/proyecto/acueducto
+  909  tree
+  910  sudo apt-get update
+  911  sudo apt-get upgrade
+  912  tree
+  913  history 
+  914  tree
+  915  cp folder1/proyecto/ folder2/
+  916  cp -r folder1/proyecto/ folder2/
+  917  tree
+  918  history 
+  919  tree
+  920  rm -r  folder2/proyecto/
+  921  tree
+  922  mkdir -p folder1/proyecto/acueducto/administracion/empleados/otros
+  923  tree
+  924  cp -r folder1/proyecto/acueducto/ folder2/
+  925  tree
+  926  cp -r folder1/proyecto/ folder2/
+  927  tree
+  928  cp -r folder1/proyecto/ folder2/
+  929  tree
+  930  cp -r folder1/proyecto/ folder2/acueducto/
+  931  tree
+  932  ls -l
+  933  touch hola
+  934  tree
+  935  ls
+  936  ls -l
+  937  dd if=/dev/zero of=hola bs=1 count=10
+  938  ls -l
+  939  dd if=/dev/zero of=hola bs=1 count=100
+  940  ls -l
+  941  cp hola folder1/
+  942  ls -l
+  943  du -l folder1
+  944  tree
+  945  du -l folder1
+  946  tree -p
+  947  tree -s
+  948  tree -sh
+  949  df -lh
+  950  du -lh
+  951  du -lh folder1/
+  952  du -l folder1/
+  953  du -lb folder1/
+  954  ls
+  955  ls -l
+  956  rm hola 
+  957  ls
+  958  ls -l
+  959  touch file1
+  960  ls -l
+  961  hexdump -C file1 
+  962  echo hola > file1
+  963  hexdump -C file1 
+  964  dd if=/dev/zero of=hola bs=1 count=100
+  965  ls -l
+  966  cat file1 
+  967  cat hola file1 > miarchivpo
+  968  vim miarchivpo 
+  969  hexdump -C miarchivpo 
+  970  ls -l
+  971  dmesg | less 
+  972  ls
+  973  tree
+  974  rm hola miarchivpo 
+  975  ls
+  976  rm file1 
+  977  ls -l
+  978  tree
+  979  touch folder1/proyecto/acueducto/file-{1,2,3}/empleados/file-{casa,perrro,gato}/otros/perico
+  980  touch -r folder1/proyecto/acueducto/file-{1,2,3}/empleados/file-{casa,perrro,gato}/otros/perico
+  981  touch -p folder1/proyecto/acueducto/file-{1,2,3}/empleados/file-{casa,perrro,gato}/otros/perico
+  982  touch -p folder1/proyecto/acueducto/file-{1,2,3}
+  983  touch folder1/proyecto/acueducto/file-{1,2,3}
+  984  touch -p folder1/proyecto/acueducto/empleados/file-{casa,perrro,gato}/otros/perico
+  985  touch  folder1/proyecto/acueducto/empleados/file-{casa,perrro,gato}/otros/perico
+  986  touch  folder1/proyecto/acueducto/empleados/file-{casa,perrro,gato}
+  987  touch  folder1/proyecto/acueducto/administracion/empleados/file-{casa,perrro,gato}
+  988  tree
+  989  rm -r folder2/
+  990  tree
+  991  history 
+  992  tree
+  993  #Revisar las lineas ante5i
+  994  #Revisar las lineas anteriores
+  995  history 
+  996  history > hist
+  997  less hist 
+  998  #comentario: Revisar las lineas anteriores
+  999  history > hist
+ 1000  less hist 
+ 1001  history 
+ 1002  tree
+ 1003  ls
+ 1004  file hist 
+ 1005  tar -czf folder1.tar.gz folder1/
+ 1006  ls 
+ 1007  ls -l
+ 1008  file folder1.tar.gz 
+ 1009  locate *.jpe
+ 1010  locate *.png
+ 1011  gfile 
+ 1012  file /var/lib/app-info/icons/ubuntu-xenial-updates-universe/64x64/owncloud-client_owncloud.png
+ 1013  cp /var/lib/app-info/icons/ubuntu-xenial-updates-universe/64x64/owncloud-client_owncloud.png .
+ 1014  ls
+ 1015  file owncloud-client_owncloud.png 
+ 1016  tree
+ 1017  man whereis 
+ 1018  ls
+ 1019  ls folder1
+ 1020  ls folder1/
+ 1021  tree
+ 1022  cp folder1/proyecto/acueducto/administracion/empleados/* .
+ 1023  cp -r folder1/proyecto/acueducto/administracion/empleados/* .
+ 1024  ls
+ 1025  ls -l
+ 1026  cp -r folder1/proyecto/acueducto/administracion/empleados .
+ 1027  l s-l
+ 1028  ls -l
+ 1029  tree empleados/
+ 1030  history 
+ 1031  whereis bash
+ 1032  whereis -b bash
+ 1033  which passwd 
+ 1034  which -a passwd 
+ 1035  whereis passwd
+ 1036  which -a passwd 
+ 1037  cd
+ 1038  ls
+ 1039  cd bin/
+ 1040  ls
+ 1041  touch ping 
+ 1042  whereis ping
+ 1043  ls
+ 1044  type ll
+ 1045  type ls
+ 1046  type grep
+ 1047  type grep -a 
+ 1048  type -a grep
+ 1049  type -a ping 
+ 1050  which ping 
+ 1051  which -a ping 
+ 1052  ls
+ 1053  whereis ping 
+ 1054  history 
+ 1055  ls
+ 1056  ls -l
+ 1057  cd ..
+ 1058  ls
+ 1059  ls -l
+ 1060  cd /tmp/test/
+ 1061  ls
+ 1062  cd /usr/bin/
+ 1063  ls
+ 1064  ls -l w*
+ 1065  ls -l w??
+ 1066  ls -l w???
+ 1067  ls -l w???*
+ 1068  ls -l w??[ba]*
+ 1069  ls -l w??[ba]
+ 1070  ls -l w??[a-d]
+ 1071  ls -l w??[a-d]*
+ 1072  echo w?
+ 1073  echo w??
+ 1074  echo w???
+ 1075  echo wall wget wish
+ 1076  ls -l w??[a-d]*
+ 1077  ls  w??[a-d]*
+ 1078  ls  watch       webapp-container       webbrowser-app  whoami watchgnupg  webapp-container-hook  which           word-list-compress
+ 1079  echo [!a-v]*
+ 1080  echo [!A-V]*
+ 1081  echo [!A-Va-v]*[1-9]*.txt
+ 1082  echo  watch       webapp-container       webbrowser-app  whoami watchgnupg  webapp-container-hook  which           word-list-compress
+ 1083  echo w???
+ 1084  history 
+ 1085  whereis -bm ls tr
+ 1086  whereis -bm ls tr -m gcc
+ 1087  ls /usr/share/ma
+ 1088  ls /usr/share/man
+ 1089  ls /usr/share/man1
+ 1090  ls /usr/share/man/man1/
+ 1091  ls /usr/share/man/man1/ | grep pass
+ 1092  whereis -m passwd
+ 1093  whereis -bm passwd
+ 1094  find . -name Download
+ 1095  find . -name Downloads
+ 1096  find . -name Dow*
+ 1097  find . -name 'Dow*'
+ 1098  find . -iname 'Dow*'
+ 1099  find . -iname 'Do*'
+ 1100  find / -iname 'Do*'
+ 1101  find / -name 'Do*'
+ 1102  sudo updatedb
+ 1103  ls
+ 1104  mkdir bin
+ 1105  cd bin/
+ 1106  ls
+ 1107  rm -r ping 
+ 1108  touch ping 
+ 1109  locate ping 
+ 1110  ls
+ 1111  rm ping 
+ 1112  sudo updatedb
+ 1113  locate ping | less 
+ 1114  ls
+ 1115  touch ping 
+ 1116  locate ping | less 
+ 1117  sudo updatedb
+ 1118  locate ping | less 
+ 1119  locate *.iso
+ 1120  locate -i *.iso
+ 1121  locate -i *.ISO
+ 1122  locate  *.ISO
+ 1123  pwd
+ 1124  ls
+ 1125  find . -name Descarga
+ 1126  find . -name Descargas
+ 1127  find /home -name Descargas
+ 1128  find / -name Descargas
+ 1129  locate Descargas
+ 1130  find . -name Des*
+ 1131  find . -name 'Des*'
+ 1132  find /etc/ -name '*.conf'
+ 1133  ls
+ 1134  find . -name 'Des*'
+ 1135  mkdir Descuentos
+ 1136  find . -name 'Des*'
+ 1137  mkdir -p test/Descontrol
+ 1138  find . -name Des*
+ 1139  find . -name Desc*
+ 1140  find . -name Desc
+ 1141  find . -name Desc*
+ 1142  find . -name De*
+ 1143  find . -name "De*"
+ 1144  find . -name 'De*'
+ 1145  find . -name De*
+ 1146  find . -name 'De*'
+ 1147  find . -name 'De*' -a -name 'Doc*'
+ 1148  find . -name 'De*' -o -name 'Doc*'
+ 1149  find . -iname 'De*' -o -name 'Doc*'
+ 1150  ls
+ 1151  find /var/log/ -size +1G
+ 1152  sudo find /var/log/ -size +1G
+ 1153  sudo find . -size +1G
+ 1154  find . -size +1G
+ 1155  find . -size +1G -ls
+ 1156  find . -size +1G -ls -l
+ 1157  find . -size +1G -exec ls -l {} \;
+ 1158  find . -size +1G -exec ls -lh {} \;
+ 1159  find . -size +1G
+ 1160  find / -name '*.conf' -exec ls -lh {} \;
+ 1161  vim /tmp/test/file1
+ 1162  cd /tmp/
+ 1163  ls
+ 1164  git clone https://github.com/emvarg/LXS1_emmanuel.vargas.git
+ 1165  ls
+ 1166  git clone https://github.com/emvarg/LXS1_emmanuel.vargas.git REPOremoto
+ 1167  ls
+ 1168  cd LXS1_emmanuel.vargas/
+ 1169  ls
+ 1170  tree
+ 1171  git pull origin master
+ 1172  tree
+ 1173  history 
+ 1174  sudo apt-get upgrade
+ 1175  which git
+ 1176  locate git 
+ 1177  locate git | grep bin
+ 1178  dpkg --get-selections | grep git
+ 1179  sudo apt-get install git 
+ 1180  git config user.name Emmanuel Vargas B
+ 1181  git config --global user.name Emmanuel Vargas B
+ 1182  git config --global user.name "Emmanuel Vargas B"
+ 1183  git config --global user.mail "emvargcr@gmail.com"
+ 1184  cat ~/.gitconfig 
+ 1185  ls
+ 1186  rm file*
+ 1187  ls
+ 1188  mkdir src
+ 1189  mkdir docs
+ 1190  mkdir misc
+ 1191  mkdir tools
+ 1192  vim README.md
+ 1193  touch README.md
+ 1194  tree
+ 1195  vim .gitignore
+ 1196  tree
+ 1197  #mkdir docs misc src tools
+ 1198  cat  .gitignore
+ 1199  history 
+ 1200  cat  .gitignore
+ 1201  tree
+ 1202  touch {docs,src}/.gitgnore
+ 1203  touch {docs,src,misc,tools}/.gitignore
+ 1204  rm docs/.gitgnore 
+ 1205  rm src/.gitgnore 
+ 1206  tree -a 
+ 1207  mv docs/ documentos
+ 1208  tree -a 
+ 1209  mv documentos docs
+ 1210  tree -a 
+ 1211  echo '*.swp' >> .gitignore 
+ 1212  cat .gitignore
+ 1213  git init 
+ 1214  tree .git 
+ 1215  git add -a
+ 1216  git add --all
+ 1217  git status
+ 1218  git commit -m "Inicializacion del repo de Linux"
+ 1219  cat..//
+ 1220  cat  ../.gitconfig 
+ 1221  git config --global user.email "emvargcr@gmail.com"
+ 1222  cat  ../.gitconfig 
+ 1223  git commit -m "Inicializacion del repo de Linux"
+ 1224  git log
+ 1225  ifconfig > misc/interfaces
+ 1226  dmesg > misc/kernel
+ 1227  df -lh
+ 1228  df -lh > docs/espacios
+ 1229  tree
+ 1230  git status
+ 1231  history 
+ 1232  git status
+ 1233  git add misc/interfaces 
+ 1234  git add docs/espacios 
+ 1235  git status
+ 1236  git commit -m "Agrego archivos de espacios e interfaces"
+ 1237  git log 
+ 1238  cp /etc/apt/sources.list misc/
+ 1239  git status
+ 1240  ls
+ 1241  tree
+ 1242  vim docs/espacios 
+ 1243  git status
+ 1244  git diff docs/es
+ 1245  git diff docs/espacios
+ 1246  git status
+ 1247  git add docs/espacios 
+ 1248  git add misc/kernel 
+ 1249  git status 
+ 1250  git commit -m "Modificacion del header de espacios y agrego archivo de kernel"
+ 1251  git log
+ 1252  git remote add origin https://github.com/emvarg/LXS1_emmanuel.vargas.git
+ 1253  git remote -v
+ 1254  git push -u origin master
+ 1255  git status
+ 1256  git add misc/sources.list 
+ 1257  ls
+ 1258  tree
+ 1259  vim misc/interfaces 
+ 1260  git status
+ 1261  git add misc/interfaces 
+ 1262  git status
+ 1263  git commit -m "Agrego sources.list y modifico interfaces"
+ 1264  git push -u origin master
+ 1265  ls
+ 1266  find / -name '*.conf' -ok rm {} \;
+ 1267  whereis grep
+ 1268  man grep
+ 1269  info grep 
+ 1270  whereis -m grep
+ 1271  whereis -b grep
+ 1272  which grep
+ 1273  whereis -b grep | cut -d " " -f2
+ 1274  whereis -b grep | cut -d " " -f1
+ 1275  whereis -b grep | cut -d ":" -f2
+ 1276  whereis -b grep | cut -d " " -f2
+ 1277  whereis -b grep | cut -d ": " -f2
+ 1278  whereis -b grep | cut -d ': ' -f2
+ 1279  whereis -b grep | cut -d ':\ ' -f2
+ 1280  whereis -b grep | cut -d ' ' -f2
+ 1281  which grep
+ 1282  whereis -bm ls tr
+ 1283  whereis -bm ls tr -m gcc
+ 1284  whereis passwd
+ 1285  whereis -b passwd
+ 1286  which passwd
+ 1287  whereis -m passwd
+ 1288  man 5 passwd 
+ 1289  man 1 passwd 
+ 1290  whereis bash
+ 1291  which ping 
+ 1292  which -a ping 
+ 1293  ls
+ 1294  ls bin/
+ 1295  which -a ping 
+ 1296  echo $PATH
+ 1297  cd bin/
+ 1298  ls
+ 1299  chmod 750 ping 
+ 1300  ls -l
+ 1301  cd ..
+ 1302  which -a ping 
+ 1303  type echo
+ 1304  which echo
+ 1305  type -a echo
+ 1306  type ls
+ 1307  type -a ls
+ 1308  type -a ll
+ 1309  type -a grep
+ 1310  ls
+ 1311  cd test/
+ 1312  ls
+ 1313  rm -r Descontrol/
+ 1314  ls
+ 1315  vim file1
+ 1316  vim /etc/passwd
+ 1317  sudo apt-get upgrade
+ 1318  screen
+ 1319  cd test/
+ 1320  ls
+ 1321  cd misc/
+ 1322  ls
+ 1323  history > history_clase2.txt
+ 1324  s
+ 1325  ls
+ 1326  git status
+ 1327  cd ..
+ 1328  git status
+ 1329  git add misc/history_clase2.txt 
+ 1330  git commit -m "History de clase 2"
+ 1331  git push origin master 
+ 1332  history 
+ 1333  sudo systemctl restart lightdm.service
+ 1334  cd /tmp/
+ 1335  ls
+ 1336  ls -l out.*
+ 1337  watch ls -l out.*
+ 1338  rm out.*
+ 1339  ls
+ 1340  watch ls -l out.*
+ 1341  watch -n 2 "ls -l out.*"
+ 1342  watch ls -l out.*
+ 1343  watch -n 1 "ls -l out.*"
+ 1344  watch -n 3 "ls -l out.*"
+ 1345  watch -n 3 "ls -l out.log"
+ 1346  ip -4 addr 
+ 1347  vim /tmp/algo
+ 1348  cat /tmp/algo
+ 1349  vijm /tmp/algo
+ 1350  vim /tmp/algo
+ 1351  chmod 750 /tmp/algo
+ 1352  /tmp/algo
+ 1353  watch ./tmp/algo
+ 1354  watch bash /tmp/algo
+ 1355  vim /tmp/algo
+ 1356  watch bash /tmp/algo
+ 1357  vim /tmp/algo
+ 1358  watch bash /tmp/algo
+ 1359  vim /tmp/algo
+ 1360  watch bash /tmp/algo
+ 1361  /tmp/algo > /tmp/out.log 
+ 1362  last
+ 1363  man last
+ 1364  last -w
+ 1365  last -w | cut -f 1
+ 1366  last -w | cut -d" " -f 1
+ 1367  last -w | cut -d" " -f 1 | uniq
+ 1368  w | cut -d" " -f 1 | uniq
+ 1369  w
+ 1370  w | cut -d" " -f 1 | uniq
+ 1371  cd /tmp/
+ 1372  ls
+ 1373  car prog.sh 
+ 1374  cat prog.sh 
+ 1375  cat timer.txt 
+ 1376  watch tail  timer.txt 
+ 1377  grep '^root' /etc/passwd
+ 1378  grep 'root' /etc/passwd
+ 1379  less /etc/passwd
+ 1380  vim /etc/passwd
+ 1381  grep sshd /var/log/auth.log
+ 1382  grep ssh /var/log/auth.log
+ 1383  less /var/log/auth.log
+ 1384  less /var/log/auth.log.1 
+ 1385  grep ssh /var/log/auth.log.1 
+ 1386  grep sshd /var/log/auth.log.1 
+ 1387  grep '^sshd$' /var/log/auth.log.1 
+ 1388  grep 'sshd$' /var/log/auth.log.1 
+ 1389  grep '[root]' /etc/passwd
+ 1390  grep '[rot]' /etc/passwd
+ 1391  grep '[r]' /etc/passwd
+ 1392  grep '[rrrrrrrr]' /etc/passwd
+ 1393  grep '[root]' /etc/passwd
+ 1394  grep '[rot]' /etc/passwd
+ 1395  grep '[rot]' /etc/passwd > /tmp/rot.out
+ 1396  grep '[root]' /etc/passwd > /tmp/root.out
+ 1397  diff /tmp/rot.out /tmp/root.out
+ 1398  vim /tmp/root.out
+ 1399  diff /tmp/rot.out /tmp/root.out
+ 1400  vim /tmp/root.out
+ 1401  diff /tmp/rot.out /tmp/root.out
+ 1402  grep '[^root]' /etc/passwd
+ 1403  grep '[^aeiou]' /etc/passwd
+ 1404  grep '[rs]t' /etc/passwd
+ 1405  grep '[^rs]t' /etc/passwd
+ 1406  grep 'ro*t' /etc/passwd
+ 1407  cd /tmp/
+ 1408  mkdir test; touch test/{rot,ret,reet,root}
+ 1409  tree test/
+ 1410  ls test/
+ 1411  ls test/ | grep 'r[oe]*t'
+ 1412  date
+ 1413  date | tee time.txt
+ 1414  cat time.txt 
+ 1415  date | tee -a time.txt
+ 1416  cat time.txt 
+ 1417  date | tee -a time.txt
+ 1418  while true; do date | tee -a time.txt; done
+ 1419  while true; do date | tee -a time.txt; sleep 2; done
+ 1420  while true; do date | tee -a timer.txt; sleep 2; done
+ 1421  vim prog.sh
+ 1422  fg
+ 1423  bash prog.sh 
+ 1424  cd /tmp/
+ 1425  ls
+ 1426  cd test/
+ 1427  cd ...
+ 1428  l
+ 1429  cd ..
+ 1430  ls
+ 1431  watch -n 1 cat time.txt
+ 1432  watch -n 1 tail time.txt
+ 1433  ls /
+ 1434  ls /junk
+ 1435  echo $?
+ 1436  ls /
+ 1437  echo $?
+ 1438  ls /junk
+ 1439  echo $?
+ 1440  man ls
+ 1441  ls /junk
+ 1442  ls /junk > /tmp/out.log
+ 1443  cat /tmp/out.log
+ 1444  ls /junk > /tmp/out.log 2> /tmp/out.err
+ 1445  cat /tmp/out.{log,err}
+ 1446  cat /tmp/out.{log}
+ 1447  cat /tmp/out.log
+ 1448  cat /tmp/out.err
+ 1449  echo > /tmp/out.err 
+ 1450  cat /tmp/out.err
+ 1451  ls / 1> /tmp/out.log 2> /tmp/out.err
+ 1452  cat /tmp/out.err
+ 1453  cat /tmp/out.log 
+ 1454  ls /junk
+ 1455  find / > /tmp/out.log 2> /tmp/out.err 
+ 1456  less /tmp/out.log 
+ 1457  less /tmp/out.err 
+ 1458  watch tail /var/log/auth.log
+ 1459  watch "tail /var/log/auth.log | grep sshd"
+ 1460  netstat -latunp
+ 1461  nmap 10.124.18.221
+ 1462  ls /junk > /tmp/out.log 
+ 1463  ls /junk 2>&1 /tmp/out.log 
+ 1464  ls /junk 2>&1 1> /tmp/out.log 
+ 1465  ls /junk  1> /tmp/out.log 2>&1
+ 1466  ls /junk  2> /tmp/out.log 1>&2
+ 1467  cat /tmp/out.log 
+ 1468  ls
+ 1469  yes YEAH
+ 1470  cd buin
+ 1471  cd bin/
+ 1472  ls
+ 1473  rm *
+ 1474  w
+ 1475  w | cut -d " " -f1
+ 1476  w | cut -d " " -f1 | grep -v USUARIO
+ 1477  w | cut -d " " -f1 | grep -v USUARIO > /tmp/out.log 
+ 1478  grep -q academia /tmp/out.log
+ 1479  grep  academia /tmp/out.log
+ 1480  grep -q academia /tmp/out.log
+ 1481  echo $?
+ 1482  echo algo > /tmp/out.log
+ 1483  grep -q academia /tmp/out.log
+ 1484  echo $?
+ 1485  grep -q -v academia /tmp/out.log
+ 1486  echo $?
+ 1487  cd /tmp/
+ 1488  ls
+ 1489  cat timer.txt 
+ 1490  cat > timer
+ 1491  echo > timer
+ 1492  echo > timer.txt 
+ 1493  cat timer.txt
+ 1494  date > timer.txt
+ 1495  date >> timer.txt
+ 1496  cat timer.txt
+ 1497  cat timer.txt | xargs
+ 1498  echo sáb 29 jul 13:23:29 CST 2017 sáb 29 jul 13:23:32 CST 2017 sáb 29 jul 13:23:33 CST 2017
+ 1499  cat timer.txt | xargs
+ 1500  cat timer.txt | xargs 
+ 1501  ls /
+ 1502  ls / | grep -E '*\.*'
+ 1503  ls / | grep -E -v '*\.*'
+ 1504  ls / | grep -v -E '*\.*'
+ 1505  ls / | grep -v -E '[a-zA-Z]*\.[a-zA-Z]*'
+ 1506  ls / | grep -v -E '[a-zA-Z]*\.[a-zA-Z]*|[a-zA-Z\]*\+[a-zA-Z]*'
+ 1507  ls /
+ 1508  ls / | grep -v -E '[a-zA-Z]*\.[a-zA-Z]*|[a-zA-Z\]*\+[a-zA-Z]*'
+ 1509  ls / | grep -v -E '[a-zA-Z]*\.[a-zA-Z]*|[a-zA-Z]*\+[a-zA-Z]*'
+ 1510  ls / | grep -v -E '[a-zA-Z]*\.[a-zA-Z]*|[a-zA-Z]*\+[a-zA-Z]*' > /tmp/folder.txt
+ 1511  ls
+ 1512  cd test/
+ 1513  cat ../folder.txt | xargs mkdir 
+ 1514  ls
+ 1515  rm -r *
+ 1516  cat ../folder.txt | xargs mkdir 
+ 1517  ls
+ 1518  cat ../folder.txt | xargs 
+ 1519  history 
+ 1520  cat ../folder.txt 
+ 1521  history 
+ 1522  ls
+ 1523  rm -r *
+ 1524  ls
+ 1525  ls / | grep -v -E '[a-zA-Z]*\.[a-zA-Z]*|[a-zA-Z]*\+[a-zA-Z]*' | xargs mkdir 
+ 1526  ls -l
+ 1527  history 
+ 1528  ls / | grep -v -E '[a-zA-Z]*\.'
+ 1529  ls / | grep -v -E '[a-zA-Z]*\.[a-zA-Z]*'
+ 1530  ls / | grep -v -E '[a-zA-Z]*\.'
+ 1531  ls /
+ 1532  ls / | grep -v -E '[a-zA-Z]*\.*\+'
+ 1533  ls / | grep -v -E '[a-zA-Z]*\.|*\+*'
+ 1534  ls / | grep -v -E '[a-zA-Z]*\.|*\+'
+ 1535  ls / | grep -v -E '*\.|*\+'
+ 1536  history 
+ 1537  echo FILE1 \n FILE2 > files.txt
+ 1538  cat files.txt
+ 1539  printf  FILE1 \n FILE2 \n > files.txt
+ 1540  cat files.txt
+ 1541  printf  'FILE1 \n FILE2 \n' > files.txt
+ 1542  cat files.txt
+ 1543  printf  'FILE1 \nFILE2 \n' > files.txt
+ 1544  cat files.txt
+ 1545  :> archivo.txt
+ 1546  cat archivo.txt
+ 1547  ps
+ 1548  ps x
+ 1549  ps ef
+ 1550  ps -ef
+ 1551  ps -aux
+ 1552  man jobs
+ 1553  jobs --help
+ 1554  info jobs
+ 1555  cat /etc/hosts | tr a-z A-Z
+ 1556  tr a-z A-Z < /etc/hosts
+ 1557  yes Linux Rules
+ 1558  ls
+ 1559  yes Hola Mundo
+ 1560  jobs
+ 1561  ping 127.0.0.1
+ 1562  ping localhost
+ 1563  ping yahoo.com
+ 1564  jobs
+ 1565  ping yahoo.com
+ 1566  ps aux 
+ 1567  ps -u academia
+ 1568  kill 23406
+ 1569  jobs
+ 1570  screen
+ 1571  sudo apt-get update 
+ 1572  ls
+ 1573  htop
+ 1574  scree -list 
+ 1575  screen -list 
+ 1576  screen -r
+ 1577  jobs
+ 1578  ping localhost
+ 1579  yess lol
+ 1580  yes lol
+ 1581  jobs
+ 1582  kill -
+ 1583  kill %-
+ 1584  jobs
+ 1585  ping localhost > /dev/null
+ 1586  jobs
+ 1587  rm .ssh/*
+ 1588  ssh-keygen -t rsa
+ 1589  cd .ssh
+ 1590  ls
+ 1591  ls -l
+ 1592  cat id_rsa
+ 1593  ls -l
+ 1594  cat id_rsa.pub 
+ 1595  ssh estudiante@10.124.18.177
+ 1596  ssh estudiantes@10.124.18.177
+ 1597  cd
+ 1598  ssh-copy-id estudiantes@10.124.18.177
+ 1599  ssh estudiantes@10.124.18.177
+ 1600  ls ..
+ 1601  sudo passwd 
+ 1602  sudo passwd user1 
+ 1603  ip -4 addr
+ 1604  history 
+ 1605  ip -4 addr
+ 1606  sudo su -
+ 1607  ip -4 addr
+ 1608  history 
+ 1609  whatch w
+ 1610  watch w
+ 1611  w
+ 1612  last 
+ 1613  w
+ 1614  w
+ 1615  ssh academia@localhost
+ 1616  jobs
+ 1617  ping yahoo.com
+ 1618  ps aux | grep yes
+ 1619  yes  Hola Mundo
+ 1620  ping localhost
+ 1621  jobs
+ 1622  vim /tmp/algo.txt
+ 1623  jobs
+ 1624  bg 1
+ 1625  ls
+ 1626  jobs
+ 1627  yes  Hola Mundo > /dev/null
+ 1628  jobs
+ 1629  bg 4
+ 1630  jobs
+ 1631  ps 
+ 1632  ps -x
+ 1633  ps -u academia
+ 1634  ps aux
+ 1635  ps aux  | head
+ 1636  ps aux  | less
+ 1637  jobs
+ 1638  ps x
+ 1639  ps ax
+ 1640  ps uc
+ 1641  ps ux
+ 1642  ps uc
+ 1643  ps -o
+ 1644  ps s
+ 1645  ps sA
+ 1646  mna ps
+ 1647  man  ps
+ 1648  ps q
+ 1649  man  ps
+ 1650  ppid
+ 1651  pstree
+ 1652  pstree | less 
+ 1653  jobs
+ 1654  kill %2
+ 1655  jobs
+ 1656  ping localhost > /dev/null
+ 1657  jobs
+ 1658  fg %-
+ 1659  jobs
+ 1660  fg %4
+ 1661  jobs
+ 1662  bg %5
+ 1663  jobs
+ 1664  kill -l
+ 1665  jobs
+ 1666  ps
+ 1667  kill -9 24797
+ 1668  jobs
+ 1669  history 
+ 1670  ping localhost > /dev/null &
+ 1671  jobs
+ 1672  ping 10.124.18.221 > /dev/null &
+ 1673  jobs 
+ 1674  fg 2
+ 1675  ping 10.124.18.221 > /dev/null
+ 1676  jobs
+ 1677  bg %2
+ 1678  jobs
+ 1679  dd if=/dev/zero of=/tmp/file.out bc=1 bs=100
+ 1680  dd if=/dev/zero of=/tmp/file.out bs=1 count=100
+ 1681  ls -l /tmp/file.out 
+ 1682  cat /tmp/file.out /tmp/timer.txt > /tmp/file2
+ 1683  hexdump -C /tmp/file2
+ 1684  vim /tmp/file2
+ 1685  top
+ 1686  htop
+ 1687  ls -lh /etc/ssh/sshd_config 
+ 1688  htop
+ 1689  free -lh 
+ 1690  uptime
+ 1691  w
+ 1692  last
+ 1693  cat /proc/cpuinfo 
+ 1694  ls
+ 1695  cd Documentos/
+ 1696  ls
+ 1697  cd ..
+ 1698  ls
+ 1699  cd Documentos/
+ 1700  ls
+ 1701  git clone https://github.com/emvarg/LXS1_emmanuel.vargas.git
+ 1702  ls
+ 1703  cd LXS1_emmanuel.vargas/
+ 1704  ls
+ 1705  cd misc/
+ 1706  ls
+ 1707  history > history_clase3.txt
