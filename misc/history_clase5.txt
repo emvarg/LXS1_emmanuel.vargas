@@ -1,0 +1,224 @@
+    1  dmesg 
+    2  mount 
+    3  dmesg 
+    4  mount | grep sde1
+    5  cd /media/admin/47A4-FD37/
+    6  history 
+    7  ls
+    8  ls 'l
+    9  ls -l
+   10  cat /proc/cpuinfo | less
+   11  cat /proc/meminfo | less 
+   12  free
+   13  free -h
+   14  df -lh
+   15  su - academia
+   16  #### HOLA MUNDO
+   17  cat .bash_history 
+   18  vim .bash_history
+   19  cat .bash_history 
+   20  history 
+   21  dmesg 
+   22  ls -lh 
+   23  cd /media/admin/
+   24  ls
+   25  cd 47A4-FD37/
+   26  ls
+   27  dd if=/dev/zero of=data.out bs=100M count=3
+   28  jobs
+   29  ps 
+   30  kill -9 8032
+   31  ps 
+   32  ls
+   33  ls -l data.out 
+   34  rm data.out 
+   35  dd if=/dev/zero of=data.out bs=1M count=3
+   36  dd if=/dev/zero of=data.out bs=1M count=100
+   37  rm data.out 
+   38  sync
+   39  dd if=/dev/zero of=data.out bs=1M count=100
+   40  rm data.out 
+   41  dd if=/dev/zero of=data.out bs=1M count=300
+   42  sync
+   43  sudo iotop 
+   44  cd ..
+   45  dmesg 
+   46  mount | grep sde1
+   47  su - academia
+   48  ls
+   49  ps aux | head 
+   50  pstree | less 
+   51  pstree | head
+   52  pstree 
+   53  ps aux | head 
+   54  pstree | head
+   55  cd /etc/init.d/
+   56  ls
+   57  less ssh 
+   58  cd ..
+   59  ls
+   60  runlevel
+   61  cd rc5.d/
+   62  ls
+   63  ls -l
+   64  dmesg 
+   65  dmesg | head
+   66  dmesg | less 
+   67  dmesg | grep error
+   68  dmesg | grep err
+   69  cd /var/log
+   70  ls
+   71  ps aux | grep logrotate
+   72  ps aux | grep rotate
+   73  ps aux | grep log 
+   74  ps aux | grep rsyslog
+   75  ls
+   76  head kern.log
+   77  sudo head kern.log
+   78  ls
+   79  head syslog
+   80  sudo head syslog
+   81  ls
+   82  last 
+   83  ls
+   84  ls -l
+   85  ls -lh
+   86  ls
+   87  last -f wtmp
+   88  last -f wtmp.1
+   89  ls
+   90  last -f btmp.1
+   91  sudo last -f btmp.1
+   92  last 
+   93  ip -4 addr 
+   94  w
+   95  last 
+   96  sudo last -f btmp.1
+   97  sudo last -f btmp
+   98  ls
+   99  ls -l
+  100  less syslog
+  101  sudo less syslog
+  102  dmesg 
+  103  id
+  104  su - academia
+  105  env
+  106  echo $USER
+  107  nano tmp_script2.sh
+  108  su - academia
+  109  cd 
+  110  cd Documentos/
+  111  ls
+  112  git clone https://github.com/emvarg/LXS1_emmanuel.vargas.git
+  113  ls
+  114  cd LXS1_emmanuel.vargas/
+  115  ls
+  116  tree
+  117  ls -lRa 
+  118  ls
+  119  cd src/
+  120  ls
+  121  ls -l
+  122  cd ..
+  123  ls
+  124  ls -l
+  125  touch docs.
+  126  touch {docs,misc,src,tools}/.gitignore
+  127  ls
+  128  git sttus
+  129  git status 
+  130  rm docs. 
+  131  ls
+  132  cd src/
+  133  ls
+  134  vim tmps_script.sh
+  135  vim tmp_script.sh
+  136  echo -e "
+  137  hola mundo
+  138  este es mi script.
+  139  asdnas dasd a
+  140  sd a
+  141  sd asd " >/tmp/file.1
+  142  cat /tmp/file.1
+  143  s
+  144  ls
+  145  ls -l
+  146  rm tmp_script2.sh 
+  147  ls -l
+  148  chmod +x tmp_script.sh 
+  149  ls -l
+  150  chmod -x tmp_script.sh 
+  151  ls -l
+  152  chmod u=x tmp_script.sh 
+  153  ls -l
+  154  chmod u=rwx tmp_script.sh 
+  155  ls -l
+  156  chmod 750 tmp_script.sh 
+  157  ls -l
+  158  ./tmp_script.sh 
+  159  vim tmp_script.sh 
+  160  ./tmp_script.sh 
+  161  vim tmp_script.sh 
+  162  ./tmp_script.sh 
+  163  vim tmp_script.sh 
+  164  ./tmp_script.sh 
+  165  vim tmp_script.sh 
+  166  sudo ./tmp_script.sh 
+  167  echo $USER
+  168  echo $UID
+  169  vim tmp_script.sh 
+  170  ./tmp_script.sh 
+  171  cat ./tmp_script.sh
+  172  ls
+  173  git status 
+  174  git add tmp_script.sh 
+  175  git status 
+  176  git commit -m "Agrego mi plantilla para scripts de root"
+  177  git config --global user.email "emvargcr@gmail.com"
+  178  git config --global user.name "Emmanuel Vargas"
+  179  git commit -m "Agrego mi plantilla para scripts de root"
+  180  git log 
+  181  git push origin master
+  182  git log 
+  183  ls
+  184  vim tmp_script.sh 
+  185  ./tmp_script.sh 
+  186  vim tmp_script.sh 
+  187  ./tmp_script.sh 
+  188  vim tmp_script.sh 
+  189  ./tmp_script.sh 
+  190  vim tmp_script.sh 
+  191  ./tmp_script.sh 
+  192  vim tmp_script.sh 
+  193  ./tmp_script.sh 
+  194  vim tmp_script.sh 
+  195  ./tmp_script.sh 
+  196  vim tmp_script.sh 
+  197  git status 
+  198  vim tmp_script.sh 
+  199  git status 
+  200  git add tmp_script.sh
+  201  git commit -m "Agrego solicitud de informacion del usuario"
+  202  git push origin master
+  203  vim tmp_script.sh 
+  204  ls -l
+  205  chmod +x tmp_script.sh 
+  206  ls -l
+  207  pwd
+  208  chmod 755 tmp_script.sh 
+  209  pwd
+  210  ls -l
+  211  vim tmp_script.sh 
+  212  cd Descargas/
+  213  ls
+  214  vim setup-docker.sh 
+  215  rm setup-docker.sh 
+  216  cat .gitconfig 
+  217  cd Documentos/
+  218  ls
+  219  cd LXS1_emmanuel.vargas/
+  220  ls
+  221  tree
+  222  cd misc/
+  223  ls
+  224  history > history_clase5.txt
