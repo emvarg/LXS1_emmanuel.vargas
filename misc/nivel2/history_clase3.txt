@@ -1,0 +1,437 @@
+    1  dmesg 
+    2  mount 
+    3  dmesg 
+    4  mount | grep sde1
+    5  cd /media/admin/47A4-FD37/
+    6  history 
+    7  ls
+    8  ls 'l
+    9  ls -l
+   10  cat /proc/cpuinfo | less
+   11  cat /proc/meminfo | less 
+   12  free
+   13  free -h
+   14  df -lh
+   15  su - academia
+   16  #### HOLA MUNDO
+   17  cat .bash_history 
+   18  vim .bash_history
+   19  cat .bash_history 
+   20  history 
+   21  dmesg 
+   22  ls -lh 
+   23  cd /media/admin/
+   24  ls
+   25  cd 47A4-FD37/
+   26  ls
+   27  dd if=/dev/zero of=data.out bs=100M count=3
+   28  jobs
+   29  ps 
+   30  kill -9 8032
+   31  ps 
+   32  ls
+   33  ls -l data.out 
+   34  rm data.out 
+   35  dd if=/dev/zero of=data.out bs=1M count=3
+   36  dd if=/dev/zero of=data.out bs=1M count=100
+   37  rm data.out 
+   38  sync
+   39  dd if=/dev/zero of=data.out bs=1M count=100
+   40  rm data.out 
+   41  dd if=/dev/zero of=data.out bs=1M count=300
+   42  sync
+   43  sudo iotop 
+   44  cd ..
+   45  dmesg 
+   46  mount | grep sde1
+   47  su - academia
+   48  ls
+   49  ps aux | head 
+   50  pstree | less 
+   51  pstree | head
+   52  pstree 
+   53  ps aux | head 
+   54  pstree | head
+   55  cd /etc/init.d/
+   56  ls
+   57  less ssh 
+   58  cd ..
+   59  ls
+   60  runlevel
+   61  cd rc5.d/
+   62  ls
+   63  ls -l
+   64  dmesg 
+   65  dmesg | head
+   66  dmesg | less 
+   67  dmesg | grep error
+   68  dmesg | grep err
+   69  cd /var/log
+   70  ls
+   71  ps aux | grep logrotate
+   72  ps aux | grep rotate
+   73  ps aux | grep log 
+   74  ps aux | grep rsyslog
+   75  ls
+   76  head kern.log
+   77  sudo head kern.log
+   78  ls
+   79  head syslog
+   80  sudo head syslog
+   81  ls
+   82  last 
+   83  ls
+   84  ls -l
+   85  ls -lh
+   86  ls
+   87  last -f wtmp
+   88  last -f wtmp.1
+   89  ls
+   90  last -f btmp.1
+   91  sudo last -f btmp.1
+   92  last 
+   93  ip -4 addr 
+   94  w
+   95  last 
+   96  sudo last -f btmp.1
+   97  sudo last -f btmp
+   98  ls
+   99  ls -l
+  100  less syslog
+  101  sudo less syslog
+  102  dmesg 
+  103  id
+  104  su - academia
+  105  env
+  106  echo $USER
+  107  nano tmp_script2.sh
+  108  su - academia
+  109  cd 
+  110  cd Documentos/
+  111  ls
+  112  git clone https://github.com/emvarg/LXS1_emmanuel.vargas.git
+  113  ls
+  114  cd LXS1_emmanuel.vargas/
+  115  ls
+  116  tree
+  117  ls -lRa 
+  118  ls
+  119  cd src/
+  120  ls
+  121  ls -l
+  122  cd ..
+  123  ls
+  124  ls -l
+  125  touch docs.
+  126  touch {docs,misc,src,tools}/.gitignore
+  127  ls
+  128  git sttus
+  129  git status 
+  130  rm docs. 
+  131  ls
+  132  cd src/
+  133  ls
+  134  vim tmps_script.sh
+  135  vim tmp_script.sh
+  136  echo -e "
+  137  hola mundo
+  138  este es mi script.
+  139  asdnas dasd a
+  140  sd a
+  141  sd asd " >/tmp/file.1
+  142  cat /tmp/file.1
+  143  s
+  144  ls
+  145  ls -l
+  146  rm tmp_script2.sh 
+  147  ls -l
+  148  chmod +x tmp_script.sh 
+  149  ls -l
+  150  chmod -x tmp_script.sh 
+  151  ls -l
+  152  chmod u=x tmp_script.sh 
+  153  ls -l
+  154  chmod u=rwx tmp_script.sh 
+  155  ls -l
+  156  chmod 750 tmp_script.sh 
+  157  ls -l
+  158  ./tmp_script.sh 
+  159  vim tmp_script.sh 
+  160  ./tmp_script.sh 
+  161  vim tmp_script.sh 
+  162  ./tmp_script.sh 
+  163  vim tmp_script.sh 
+  164  ./tmp_script.sh 
+  165  vim tmp_script.sh 
+  166  sudo ./tmp_script.sh 
+  167  echo $USER
+  168  echo $UID
+  169  vim tmp_script.sh 
+  170  ./tmp_script.sh 
+  171  cat ./tmp_script.sh
+  172  ls
+  173  git status 
+  174  git add tmp_script.sh 
+  175  git status 
+  176  git commit -m "Agrego mi plantilla para scripts de root"
+  177  git config --global user.email "emvargcr@gmail.com"
+  178  git config --global user.name "Emmanuel Vargas"
+  179  git commit -m "Agrego mi plantilla para scripts de root"
+  180  git log 
+  181  git push origin master
+  182  git log 
+  183  ls
+  184  vim tmp_script.sh 
+  185  ./tmp_script.sh 
+  186  vim tmp_script.sh 
+  187  ./tmp_script.sh 
+  188  vim tmp_script.sh 
+  189  ./tmp_script.sh 
+  190  vim tmp_script.sh 
+  191  ./tmp_script.sh 
+  192  vim tmp_script.sh 
+  193  ./tmp_script.sh 
+  194  vim tmp_script.sh 
+  195  ./tmp_script.sh 
+  196  vim tmp_script.sh 
+  197  git status 
+  198  vim tmp_script.sh 
+  199  git status 
+  200  git add tmp_script.sh
+  201  git commit -m "Agrego solicitud de informacion del usuario"
+  202  git push origin master
+  203  vim tmp_script.sh 
+  204  ls -l
+  205  chmod +x tmp_script.sh 
+  206  ls -l
+  207  pwd
+  208  chmod 755 tmp_script.sh 
+  209  pwd
+  210  ls -l
+  211  vim tmp_script.sh 
+  212  cd Descargas/
+  213  ls
+  214  vim setup-docker.sh 
+  215  rm setup-docker.sh 
+  216  cat .gitconfig 
+  217  cd Documentos/
+  218  ls
+  219  cd LXS1_emmanuel.vargas/
+  220  ls
+  221  tree
+  222  cd misc/
+  223  ls
+  224  history > history_clase5.txt
+  225  git status 
+  226  git add ../src/tmp_script.sh  history_clase5.txt
+  227  git status 
+  228  git commit -m "Salvo history de clase 5 + ejemplo de su"
+  229  git push origin master
+  230  history 
+  231  cd /tmp/
+  232  uname -a
+  233  sudo su -
+  234  sudo apt-get install cowsay
+  235  sudo apt-get install ffmpeg
+  236  vim /etc/default/grub 
+  237  vim /boot/grub/grub.cfg 
+  238  ls /etc/grub.d/
+  239  ls /etc/grub.d/ -l
+  240  ls /boot/
+  241  vim /etc/default/grub 
+  242  cd /boot/
+  243  ls
+  244  vim config-4.4.0-97-generic 
+  245  grep USB config-4.4.0-97-generic
+  246  ls /etc/grub.d/
+  247  ls /boot/grub/grub.cfg 
+  248  grep menuentry grub/grub.cfg 
+  249  grep -n menuentry grub/grub.cfg 
+  250  vim grub/grub.cfg
+  251  ls
+  252  cd grub/
+  253  ls
+  254  ls -l
+  255  vim grubenv 
+  256  vim /etc/default/grub 
+  257  vim grubenv 
+  258  ls -l
+  259  ls /var/cache/apt/archives/
+  260  ls /etc/apt
+  261  ls /usr/lib/grub/
+  262  ls /usr/lib/grub/ -l
+  263  tree /usr/lib/grub/
+  264  cd /boot/
+  265  ls -l
+  266  ls 
+  267  uname -a
+  268  ls -l
+  269  ls -lh
+  270  sudo fdisk -l
+  271  df -lh 
+  272  apt-cache show grub-common 
+  273  apt-cache show grub-common | grep -E 'version|source'
+  274  apt-cache show grub-common | grep -E 'Version|Source'
+  275  apt-cache show grub-common | grep -i -E 'version|source'
+  276  sudo -i
+  277  runlevel 
+  278  pstree | less 
+  279  vim /etc/init/rc-sysinit.conf 
+  280  systemctl status sshd.service 
+  281  systemctl status apache2.service 
+  282  su - academia 
+  283  systemctl status apache2.service 
+  284  ls /etc/init.d/
+  285  /etc/init.d/apache2 status
+  286  systemctl status apache2.service 
+  287  systemctl status sshd.service 
+  288  sudo systemctl status sshd.service 
+  289  sudo /etc/init.d/apache2 stop
+  290  /etc/init.d/apache2 status
+  291  /etc/init.d/apache2 start
+  292  sudo /etc/init.d/apache2 status
+  293  cat /var/log/syslog
+  294  sudo tail /var/log/syslog
+  295  sudo /etc/init.d/apache2 status
+  296  service apache2 stop
+  297  sudo service apache2 stop
+  298  sudo service apache2 status 
+  299  sudo service apache2 start
+  300  sudo service apache2 status 
+  301  history 
+  302  sudo systemctl status sshd.service
+  303  sudo /etc/init.d/apache2 status
+  304  sudo service apache2  status 
+  305  history 
+  306  /etc/init.d/apache2 
+  307  vim /etc/init.d/apache2 
+  308  /etc/init.d/ssh 
+  309  systemctl list-units --type target
+  310  sudo systemctl set-default graphical.target 
+  311  ls -l /etc/systemd/system/default.target
+  312  vim /lib/systemd/system/graphical.target
+  313  systemctl isolate poweroff.target 
+  314  sudo systemctl restart lightdm.service 
+  315  ls
+  316  ls 'l
+  317  ls -l
+  318  runlevel 
+  319  who -r
+  320  systemctl status graphical.target 
+  321  systemctl list-units --type service
+  322  systemctl get-default 
+  323  ls /etc/systemd/system
+  324  ls /etc/systemd/system/default.target -l
+  325  ls -l /lib/systemd/system
+  326  ls  /lib/systemd/system
+  327  vim /lib/systemd/system/ssh.service 
+  328  echo -e "Este es un mensaje \n muy importante \n guarde todo!"
+  329  echo -e "Este es un mensaje \n muy importante \n guarde todo! att: $USER"
+  330  echo -e "Este es un mensaje \n muy importante \n guarde todo! \n att: $USER"
+  331  echo -e "Este es un mensaje \n muy importante \n guarde todo! \n att: $USER" | wall
+  332  cd /var/log/apache2/
+  333  sudo su -
+  334  sudo fdisk -l
+  335  mount 
+  336  df -lh 
+  337  sudo systemctl restart lightdm.service 
+  338  ping yahoo.com
+  339  free -h
+  340  fdisk 
+  341  ifconfig 
+  342  ifconfig -a 
+  343  ls -l Documentos/
+  344  ls -l Documentos/ -lh 
+  345  su - academia
+  346  master
+  347  cd Descargas/
+  348  ls
+  349  mount -t loop debian-9.2.1-amd64-netinst.iso /mnt/
+  350  sudo mount -t loop debian-9.2.1-amd64-netinst.iso /mnt/
+  351  mount -o loop debian-9.2.1-amd64-netinst.iso /mnt/
+  352  sudo mount -o loop debian-9.2.1-amd64-netinst.iso /mnt/
+  353  ls /mnt/
+  354  sudo umount /mnt/
+  355  ls /mnt/
+  356  man mount 
+  357  alias master='ssh -p 2222 master@127.0.0.1'
+  358  master
+  359  vim ~/.bashrc 
+  360  echo 'alias master='ssh -p 2222 master@127.0.0.1'' >> /tmp/temp
+  361  cat /tmp/temp
+  362  echo -e 'alias master=\'ssh -p 2222 master@127.0.0.1\'' >> /tmp/temp
+  363  echo -e "alias master=\'ssh -p 2222 master@127.0.0.1\'" >> /tmp/temp
+  364  cat /tmp/temp
+  365  echo -e "alias master='ssh -p 2222 master@127.0.0.1'" >> /tmp/temp
+  366  cat /tmp/temp
+  367  echo -e "alias master='ssh -p 2222 master@127.0.0.1'" >> ~/.bashrc 
+  368  tail ~/.bashrc
+  369  vim ~/.bashrc
+  370  tail ~/.bashrc
+  371  ping 10.0.2.15
+  372  ssh admin@10.0.2.15
+  373  ifconfig 
+  374  ssh admin@127.0.0.1
+  375  ssh master@127.0.0.1
+  376  ssh -p 2222 master@127.0.0.1
+  377  ifconfig 
+  378  ssh -p 2222 master@127.0.0.1
+  379  sudo su -
+  380  sudo systemctl start apache2.service
+  381  systemctl status apache2.service
+  382  sudo su -
+  383  ssh -p 2222 master@localhost
+  384  ssh -p 2222 master@127.0.0.1
+  385  ls .ssh/
+  386  ssh-keygen -t rsa
+  387  ls .ssh/
+  388  less .ssh/id_rsa
+  389  less .ssh/id_rsa.pub 
+  390  ssh-copy-id -p 2222 master@127.0.0.1
+  391  ssh -p 2222 master@127.0.0.1
+  392  history 
+  393  ssh -p 2222 master@127.0.0.1
+  394  master 
+  395  mount 
+  396  dmesg 
+  397  mount | tail
+  398  vi /tmp/mieda
+  399  master
+  400  master
+  401  ls
+  402  cd Documentos/
+  403  ls
+  404  cd LXS1_emmanuel.vargas/
+  405  ls
+  406  cd misc/
+  407  ls
+  408  cd ..
+  409  ls
+  410  ls -l
+  411  cd ..
+  412  ls
+  413  cd ..
+  414  ls
+  415  cd Documentos/
+  416  ls
+  417  cd LXS1_emmanuel.vargas/
+  418  ls
+  419  cat README.md 
+  420  tree
+  421  cat src/tmp_script.sh 
+  422  ls
+  423  cd ..
+  424  ls
+  425  cd ..
+  426  cd Documentos/
+  427  ls
+  428  cd LXS1_emmanuel.vargas/
+  429  ls
+  430  cd misc/
+  431  ls
+  432  mkdir nivel2
+  433  ls
+  434  cd nu
+  435  cd nivel2/
+  436  ls
+  437  history > history_clase3.txt
