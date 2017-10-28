@@ -1,0 +1,277 @@
+    1  shutdown -h now 
+    2  fdisk -l
+    3  fdisk /dev/sda
+    4  apt-cache search netutilities
+    5  apt-cache search netstat
+    6  apt-get install vim-nox net-tools sudo
+    7  usermod -a -G sudo master
+    8  id master
+    9  history 
+   10  fdisk -l
+   11  fdisk /dev/sda
+   12  fdisk -l
+   13  man mkfs
+   14  ls
+   15  cd 
+   16  ls
+   17  /home/
+   18  ls
+   19  cd /home/
+   20  ls
+   21  cd master/
+   22  ls
+   23  dd if=/dev/zero of=archivoswap bs=1M count=100
+   24  ls -l
+   25  ls -lh
+   26  file archivoswap 
+   27  hexdump -C archivoswap
+   28  mkswap archivoswap
+   29  file archivoswap 
+   30  hexdump -C archivoswap | less
+   31  swapon archivoswap
+   32  ls 
+   33  ls -l
+   34  chown 600 archivoswap
+   35  ls -l
+   36  swapon archivoswap
+   37  ls -l
+   38  swapoff archivoswap
+   39  ls -lh
+   40  chown root archivoswap
+   41  chmod 600 archivoswap
+   42  ls -lh
+   43  swapon archivoswap
+   44  ls -la
+   45  man swapon 
+   46  swapon --show
+   47  man swapon 
+   48  swapon --show
+   49  swapon -s
+   50  ls
+   51  ls archivoswap 
+   52  swapoff archivoswap
+   53  swapon -s
+   54  history 
+   55  shutdown -h now
+   56  cd /mnt/disco-
+   57  ls
+   58  cd /mnt/disco-100/
+   59  ls
+   60  dmesg > file.out
+   61  ls -la
+   62  chown master file.out 
+   63  ls -la
+   64  chmod 750 file.out 
+   65  ls -la 
+   66  exit 
+   67  mount 
+   68  fdisk -l
+   69  mount /dev/sdb1 /mnt/disco-100/
+   70  mount 
+   71  umount /dev/sdb1 
+   72  lsof 
+   73  lsof  | less 
+   74  apt-cache search fuser
+   75  apt-get install psmisc 
+   76  fuser 
+   77  fuser -m
+   78  fuser -ma
+   79  fuser -m /mnt/
+   80  fuser -m /mnt/disco-100/
+   81  fuser -m /mnt/disco-100/file.out 
+   82  lsof | grep master 
+   83  lsof | grep master | grep file.out 
+   84  w
+   85  lsof | head 
+   86  ps aux | grep 477
+   87  lsof | grep master | grep file.out 
+   88  df -lh
+   89  vim /etc/fstab 
+   90  ls /mnt/
+   91  fg
+   92  mount 
+   93  fg
+   94  fg
+   95  fg
+   96  vim /etc/fstab 
+   97  mount -a
+   98  vim /etc/fstab 
+   99  mount -a
+  100  umount /mnt/disco-100
+  101  umount /mnt/disco-100
+  102  mount -a
+  103  mount 
+  104  vim /etc/fstab 
+  105  blkid 
+  106  vim /etc/fstab 
+  107  mount 
+  108  umount /dev/sdb1 
+  109  mount -o rw,relatime,user=1000,data=ordered /dev/sdb1 /mnt/disco-100
+  110  mount 
+  111  ls -l /dev/sda1 
+  112  ls -l /mnt/disco-100/
+  113  ls -ld /mnt/disco-100/
+  114  mount 
+  115  umount /mnt/disco-100 
+  116  mount /dev/sdb1  /mnt/disco-100/
+  117  mount 
+  118  mount /mnt/disco-100 -o user=1000
+  119  mount /mnt/disco-100 -o remount,user=1000
+  120  mount 
+  121  history 
+  122  cat /etc/passwd
+  123  mount 
+  124  dmesg 
+  125  dkpg --get-selctions
+  126  dkpg --get-selction
+  127  dkpg --get-selction
+  128  dkpg --get-selection
+  129  dpkg --get-selections
+  130  dpkg --get-selections | grep lvm
+  131  apt-get install lvm2 
+  132  dpkg --get-selections | grep lvm
+  133  ls
+  134  cd /tmp/
+  135  ls
+  136  cd algo/
+  137  ls
+  138  ls
+  139  ls -l
+  140  rm file1 
+  141  dmesg > file1
+  142  dmesg > file2
+  143  dmesg > file3
+  144  mkdir -p cosa/{perro,gato,loro}/folder{1,2,3}
+  145  tree
+  146  apt-get install tree
+  147  tree
+  148  touch -p cosa/{perro,gato,loro}/folder{1,2,3}/file
+  149  touch  cosa/{perro,gato,loro}/folder{1,2,3}/file
+  150  dmesg > cosa/{perro,gato,loro}/folder{1,2,3}/file
+  151  tree
+  152  ls
+  153  du -lh
+  154  ls
+  155  cp file1 cosa/perro/folder
+  156  cp file1 cosa/perro/
+  157  cp file1 cosa/gato/
+  158  cp file1 cosa/loro/
+  159  tree
+  160  du -lh
+  161  du -l
+  162  du
+  163  bc
+  164  du -s
+  165  du -s cosa/perro/
+  166  du -s cosa/
+  167  ls
+  168  cp file3 cosa/perro/folder2/
+  169  tree
+  170  du -s
+  171  du -lg
+  172  du -lh
+  173  dd if=/dev/zero of=huge bs=1M count=100
+  174  ls
+  175  mv huge cosa/gato/folder2/
+  176  du -lh
+  177  du -s cosa/
+  178  du -sh cosa/
+  179  du -sh cosa/gato/
+  180  du -sh cosa/loro/
+  181  du -h /var/log/
+  182  du -h /var/log/ | cut -d " " -f1
+  183  du -h /var/log/ | cut -d"/" -f1
+  184  du -h /var/log/ | grep apt | cut -d"/" -f1
+  185  vim /etc/fstab
+  186  du -lh
+  187  du -lh | sort
+  188  dumpe2fs /dev/sdb1 | grep back
+  189  dumpe2fs /dev/sdb1 | grep block
+  190  dumpe2fs /dev/sdb1 | less 
+  191  ls
+  192  df -lh
+  193  fdisk -k
+  194  fdisk -l
+  195  mount -o usrquota /dev/sdb1 /mnt/
+  196  mount 
+  197  apt-get install quota
+  198  apt-cache search quota-tool
+  199  apt-cache search quotatool
+  200  apt-get install quota
+  201  ls
+  202  quotastats 
+  203  quotacheck -a
+  204  ls /home/
+  205  adduser webmaster
+  206  ls /home/
+  207  edquota webmaster 
+  208  tune2fs -l /dev/sdb1 
+  209  tune2fs -l /dev/sdb1  | grep -i block
+  210  fdisk -l
+  211  tune2fs -l /dev/sdb1  | grep -i block
+  212  man tune2fs 
+  213  df -lh 
+  214  tune2fs -l /dev/sdb1  | grep -i block
+  215  df -l
+  216  tune2fs -l /dev/sdb1  | grep -i block
+  217  df -lh 
+  218  tune2fs -lh /dev/sdb1  | grep -i block
+  219  tune2fs -ls /dev/sdb1  | grep -i block
+  220  tune2fs -l /dev/sdb1  | grep -i block
+  221  fdisk -l
+  222  df -lh 
+  223  df -l
+  224  tune2fs -l /dev/sdb1  | grep -i block
+  225  tune2fs -l /dev/sdb1  | grep -i 86301
+  226  man edquota
+  227  edquota webmaster 
+  228  mount -o remount /dev/sdb1 
+  229  edquota webmaster 
+  230  edquota -p webmaster master 
+  231  edquota -t master
+  232  edquota -t
+  233  quotaon /mnt/
+  234  quota master
+  235  quota master webmaster 
+  236  quota webmaster 
+  237  quota master
+  238  su webmaster 
+  239  su - webmaster 
+  240  mount -o remount,uid=1001 /dev/sdb1 
+  241  mount -o remount,uid=1001 /dev/sdb1  /mnt/
+  242  dmesg 
+  243  id webmaster 
+  244  mount 
+  245  mount -o remount,uid=1000 /dev/sdb1  /mnt/
+  246  mount -o remount,uid=1001,rw,usrquota /dev/sdb1  /mnt/
+  247  dmesg > /mnt/file1
+  248  chown webmaster:webmaster /mnt/file1
+  249  quota webmaster 
+  250  quota master 
+  251  dmesg > /mnt/file2
+  252  chown webmaster:webmaster /mnt/file2
+  253  quota webmaster 
+  254  quota webmaster master 
+  255  repquota /mnt/
+  256  history 
+  257  edquota master 
+  258  edquota webmaster 
+  259  cd /mnt/
+  260  ls
+  261  dmesg > file3
+  262  ls -l
+  263  chown master file3
+  264  ls -l
+  265  dmesg > file4
+  266  chown master file4
+  267  ls -l
+  268  quota mater
+  269  quota master
+  270  quota webmaster
+  271  history 
+  272  man apt-get
+  273  man dpkg 
+  274  apt-cache depends vim-nox
+  275  apt-cache search cscope
+  276  apt-cache search scope
+  277  apt-cache show vim-nox
