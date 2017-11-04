@@ -26,6 +26,7 @@ for (int i = 0; MAX_VAL > i; i++){
 }
 
 printf("Values: %d, %d, %d, %d, %d, %d \n", val1, val2, val3, val4, val5, val6);
+	printf("Val call for Array val= %d \n", array[val5]);
 
 return 0;
 }
